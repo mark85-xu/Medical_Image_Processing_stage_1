@@ -74,4 +74,4 @@
 & 'C:\Users\lhx\miniconda3\envs\yolov5\python.exe' -u -m gradcam_analysis.generate_comparison --seed 20261109 --per-class 8 --output gradcam_results/final
 ```
 
-单图模式可使用 `--image <当前Clean测试集图像文件名> --output <独立输出目录>`。已经分别对一张 HCC 和一张血管瘤测试图完成四模型冒烟验证；批量结果通过患者去重、目标层形状和梯度、CAM 有限值、全部路径存在、每图四模型齐全、预测类别记录一致等检查。输出目录 `gradcam_results/` 已加入 `.gitignore`，不会把医学图像及衍生热图误加入 Git。
+单图模式可使用 `--image <当前Clean测试集图像文件名> --output <独立输出目录>`。已经分别对一张 HCC 和一张血管瘤测试图完成四模型冒烟验证；批量结果通过患者去重、目标层形状和梯度、CAM 有限值、全部路径存在、每图四模型齐全、预测类别记录一致等检查。按后续要求，`gradcam_results/` 中的 PNG 图像已单独加入 Git；`.npy` 矩阵及 CSV/JSON 明细仍留在本地，原始 `data/` 不上传。
