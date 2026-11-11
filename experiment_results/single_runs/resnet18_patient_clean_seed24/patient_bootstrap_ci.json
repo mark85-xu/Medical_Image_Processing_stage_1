@@ -1,0 +1,32 @@
+{
+  "accuracy": {
+    "lower_95": 0.8918918918918919,
+    "upper_95": 0.9864864864864865,
+    "valid_resamples": 1000
+  },
+  "hcc_precision": {
+    "lower_95": 0.918918918918919,
+    "upper_95": 1.0,
+    "valid_resamples": 1000
+  },
+  "hcc_sensitivity_recall": {
+    "lower_95": 0.8409090909090909,
+    "upper_95": 1.0,
+    "valid_resamples": 1000
+  },
+  "hemangioma_specificity": {
+    "lower_95": 0.8928571428571429,
+    "upper_95": 1.0,
+    "valid_resamples": 1000
+  },
+  "hcc_f1": {
+    "lower_95": 0.8928248709122204,
+    "upper_95": 0.989247311827957,
+    "valid_resamples": 1000
+  },
+  "roc_auc_hcc": {
+    "lower_95": 0.9393712064379731,
+    "upper_95": 1.0,
+    "valid_resamples": 1000
+  }
+}

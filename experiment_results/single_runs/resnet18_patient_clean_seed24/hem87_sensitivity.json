@@ -1,0 +1,48 @@
+{
+  "excluded_patient": "Hem_87",
+  "excluded_images": 5,
+  "image": {
+    "n_images_or_patients": 249,
+    "accuracy": 0.9156626506024096,
+    "balanced_accuracy": 0.9135818561001043,
+    "hcc_precision": 0.9142857142857143,
+    "hcc_sensitivity_recall": 0.9343065693430657,
+    "hemangioma_specificity": 0.8928571428571429,
+    "hcc_f1": 0.9241877256317689,
+    "macro_f1": 0.9145825505986898,
+    "brier_hcc": 0.061639764517112706,
+    "roc_auc_hcc": 0.9732142857142857,
+    "confusion_matrix_rows_true_cols_pred_HCC_Hemangioma": [
+      [
+        128,
+        9
+      ],
+      [
+        12,
+        100
+      ]
+    ]
+  },
+  "patient": {
+    "n_images_or_patients": 73,
+    "accuracy": 0.9452054794520548,
+    "balanced_accuracy": 0.9481566820276498,
+    "hcc_precision": 0.975,
+    "hcc_sensitivity_recall": 0.9285714285714286,
+    "hemangioma_specificity": 0.967741935483871,
+    "hcc_f1": 0.951219512195122,
+    "macro_f1": 0.944359756097561,
+    "brier_hcc": 0.04885132947648417,
+    "roc_auc_hcc": 0.9761904761904762,
+    "confusion_matrix_rows_true_cols_pred_HCC_Hemangioma": [
+      [
+        39,
+        3
+      ],
+      [
+        1,
+        30
+      ]
+    ]
+  }
+}

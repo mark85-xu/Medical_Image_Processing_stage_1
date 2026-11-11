@@ -1,0 +1,22 @@
+{
+  "n_images_or_patients": 74,
+  "accuracy": 0.9864864864864865,
+  "balanced_accuracy": 0.984375,
+  "hcc_precision": 0.9767441860465116,
+  "hcc_sensitivity_recall": 1.0,
+  "hemangioma_specificity": 0.96875,
+  "hcc_f1": 0.988235294117647,
+  "macro_f1": 0.9861811391223155,
+  "brier_hcc": 0.011788331463970996,
+  "roc_auc_hcc": 1.0,
+  "confusion_matrix_rows_true_cols_pred_HCC_Hemangioma": [
+    [
+      42,
+      0
+    ],
+    [
+      1,
+      31
+    ]
+  ]
+}
