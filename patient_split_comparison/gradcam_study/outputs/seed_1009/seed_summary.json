@@ -1,0 +1,14 @@
+{
+  "seed": 1009,
+  "images": 18,
+  "random_images": 16,
+  "selected_cases": 2,
+  "valid_cams": 36,
+  "mean_top20_iou": 0.31118289390348214,
+  "mean_centroid_distance": 0.14391038115317994,
+  "mean_pearson_7x7": 0.4288191284532537,
+  "random_prediction_disagreements": 0,
+  "original_1x1_all": true,
+  "fixed_7x7_all": true,
+  "max_abs_prob_difference": 0.004053264856338501
+}

@@ -1,0 +1,93 @@
+{
+  "pair": {
+    "seed": 1002,
+    "patient_id": "HCC_1599",
+    "image_filename": "049f5f05-2adc-4d11-a4c0-76a3b4fa53fb.jpg",
+    "class_label": "HCC",
+    "selection_group": "prediction_selected",
+    "selection_reason": "both_right",
+    "original_correct": true,
+    "fixed_correct": true,
+    "top20_iou": 0.25,
+    "centroid_distance": 0.14044507196184888,
+    "pearson_7x7": 0.4277861461758135,
+    "comparison_path": "seed_1002\\comparisons\\prediction_selected\\HCC\\049f5f05-2adc-4d11-a4c0-76a3b4fa53fb.png",
+    "attention_path": "seed_1002\\attention_audit\\049f5f05-2adc-4d11-a4c0-76a3b4fa53fb.png"
+  },
+  "predictions": [
+    {
+      "seed": 1002,
+      "patient_id": "HCC_1599",
+      "image_filename": "049f5f05-2adc-4d11-a4c0-76a3b4fa53fb.jpg",
+      "class_label": "HCC",
+      "selection_group": "prediction_selected",
+      "selection_reason": "both_right",
+      "model": "original",
+      "predicted_class": "HCC",
+      "correct": true,
+      "prob_hcc": 0.9874036312103271,
+      "saved_prob_hcc": 0.9874089956283569,
+      "prob_difference": -5.364418029785156e-06,
+      "best_epoch": 10,
+      "checkpoint_sha256": "67d912bb493299c53a228db0112e084866cf2d41871947b87f72c1142f17c4cc",
+      "target_layer_shape": [
+        1,
+        2048,
+        7,
+        7
+      ],
+      "gradient_l1": 3.1763916015625,
+      "cam_valid": true,
+      "attention_shape": [
+        1,
+        1
+      ],
+      "attention_min": 0.5759062767028809,
+      "attention_max": 0.5759062767028809,
+      "attention_std": 0.0,
+      "true_cam_224_path": "seed_1002\\individual\\original\\049f5f05-2adc-4d11-a4c0-76a3b4fa53fb_gt_224.npy",
+      "true_cam_7x7_path": "seed_1002\\individual\\original\\049f5f05-2adc-4d11-a4c0-76a3b4fa53fb_gt_7x7.npy",
+      "heatmap_path": "seed_1002\\individual\\original\\049f5f05-2adc-4d11-a4c0-76a3b4fa53fb_gt_heatmap.png",
+      "overlay_path": "seed_1002\\individual\\original\\049f5f05-2adc-4d11-a4c0-76a3b4fa53fb_gt_overlay.png",
+      "predicted_cam_path": "",
+      "predicted_overlay_path": ""
+    },
+    {
+      "seed": 1002,
+      "patient_id": "HCC_1599",
+      "image_filename": "049f5f05-2adc-4d11-a4c0-76a3b4fa53fb.jpg",
+      "class_label": "HCC",
+      "selection_group": "prediction_selected",
+      "selection_reason": "both_right",
+      "model": "spatial_fixed",
+      "predicted_class": "HCC",
+      "correct": true,
+      "prob_hcc": 0.9999967813491821,
+      "saved_prob_hcc": 0.9999967813491821,
+      "prob_difference": 0.0,
+      "best_epoch": 6,
+      "checkpoint_sha256": "bd37bffc99542d032daa961ee9c586206a5b6f3085bf206db728996296d765f3",
+      "target_layer_shape": [
+        1,
+        2048,
+        7,
+        7
+      ],
+      "gradient_l1": 22.772640228271484,
+      "cam_valid": true,
+      "attention_shape": [
+        7,
+        7
+      ],
+      "attention_min": 0.02082802914083004,
+      "attention_max": 0.9999979734420776,
+      "attention_std": 0.2837752401828766,
+      "true_cam_224_path": "seed_1002\\individual\\spatial_fixed\\049f5f05-2adc-4d11-a4c0-76a3b4fa53fb_gt_224.npy",
+      "true_cam_7x7_path": "seed_1002\\individual\\spatial_fixed\\049f5f05-2adc-4d11-a4c0-76a3b4fa53fb_gt_7x7.npy",
+      "heatmap_path": "seed_1002\\individual\\spatial_fixed\\049f5f05-2adc-4d11-a4c0-76a3b4fa53fb_gt_heatmap.png",
+      "overlay_path": "seed_1002\\individual\\spatial_fixed\\049f5f05-2adc-4d11-a4c0-76a3b4fa53fb_gt_overlay.png",
+      "predicted_cam_path": "",
+      "predicted_overlay_path": ""
+    }
+  ]
+}

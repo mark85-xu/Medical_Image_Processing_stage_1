@@ -6,16 +6,18 @@
 
 - `model.py`：原始 `CustomModel` 及新增 `CustomModelSpatialFixed`；原始模型未被覆盖。
 - `scripts/`：数据审计、患者划分、训练集标准化、四种模型的自动训练与评估脚本。
-- `patient_split_comparison/`：十组配对实验脚本及运行说明。
+- `patient_split_comparison/`：十组配对训练与两版 ResNet-50 的 Grad-CAM 实验脚本、结果及说明。
 - `gradcam_analysis/`：四模型 Grad-CAM 分析代码；生成的 PNG 图像见 `gradcam_results/`。
 - `experiment_results/`：无影像、无逐患者预测的配置、指标、训练历史和汇总报告。
 - `base_line.py`、`Liver_train.py` 等：上游项目的旧入口；下述结果由 `scripts/` 下的新入口产生。
 
-**本仓库不上传** 原始 `data/`、训练 `runs/`、`figures/`、`patient_split_comparison/outputs/`，也不上传模型检查点、逐患者预测明细、论文 PDF 或私人研究聊天记录。按后续要求，四模型 Grad-CAM 生成的 PNG（包括对照图、总览图和相关原图）上传至 `gradcam_results/`；对应 `.npy` 矩阵及 CSV/JSON 明细仍保留在本地。获取并合规存放 SMC-LUD 数据后，按下面的目录和脚本在本地重建。`requirements.txt` 是上游依赖清单，不能视为本次训练环境的精确锁定文件；实际环境版本见各次 `run_config.json`。
+**本仓库不上传** 原始 `data/`、训练 `runs/`、`figures/`、`patient_split_comparison/outputs/`，也不上传模型检查点、完整测试集逐患者预测明细、论文 PDF 或私人研究聊天记录。四模型 Grad-CAM 的 PNG 在 `gradcam_results/`，其 `.npy` 与 CSV/JSON 明细仍保留在本地；后续十组、两版 ResNet-50 的 Grad-CAM 图像、CAM 矩阵与抽样记录在 `patient_split_comparison/gradcam_study/outputs/`。获取并合规存放 SMC-LUD 数据后，按下面的目录和脚本在本地重建。`requirements.txt` 是上游依赖清单，不能视为本次训练环境的精确锁定文件；实际环境版本见各次 `run_config.json`。
 
 ## Grad-CAM 图像
 
 图像位于 [`gradcam_results/`](gradcam_results/)：`final/` 为正式对照实验，`main/` 为另一批输出，`smoke_hcc/` 和 `smoke_hemangioma/` 为单图验证。正式实验的 [HCC 总览](gradcam_results/final/overview/HCC_overview.png)、[血管瘤总览](gradcam_results/final/overview/Hemangioma_overview.png)、[误判案例总览](gradcam_results/final/overview/Misclassified_overview.png)及 [逐图五列对照](gradcam_results/final/comparisons/) 可直接查看。图中的原图和热图仅用于解释模型预测；没有病灶 ROI 标注，不能视作病灶定位真值。方法与验收统计见 [`四模型GradCAM对照实验_中文说明.md`](四模型GradCAM对照实验_中文说明.md)。
+
+第二套实验是[十组原版与空间修正版 ResNet-50 的 Grad-CAM 配对比较](patient_split_comparison/gradcam_study/README.md)：共复用 20 份已训练最佳权重，在十组患者级测试划分中生成同图配对热图及空间注意力权重审计。可从[十组汇总报告](patient_split_comparison/gradcam_study/outputs/summary/结果说明.md)、[汇总图](patient_split_comparison/gradcam_study/outputs/summary/paired_cam_summary.png)和[各组图像目录](patient_split_comparison/gradcam_study/outputs/)进入。热区相似度只描述响应位置差异，不是病灶定位准确率。
 
 ## 数据准备与共同评估流程
 

@@ -1,0 +1,93 @@
+{
+  "pair": {
+    "seed": 1007,
+    "patient_id": "HCC_530",
+    "image_filename": "d73c9c63-0b8c-446a-a4b4-df7de7c1c204.png",
+    "class_label": "HCC",
+    "selection_group": "prediction_selected",
+    "selection_reason": "fixed_right_original_wrong",
+    "original_correct": false,
+    "fixed_correct": true,
+    "top20_iou": 0.17647058823529413,
+    "centroid_distance": 0.26354686160237467,
+    "pearson_7x7": 0.009576958879773426,
+    "comparison_path": "seed_1007\\comparisons\\prediction_selected\\HCC\\d73c9c63-0b8c-446a-a4b4-df7de7c1c204.png",
+    "attention_path": "seed_1007\\attention_audit\\d73c9c63-0b8c-446a-a4b4-df7de7c1c204.png"
+  },
+  "predictions": [
+    {
+      "seed": 1007,
+      "patient_id": "HCC_530",
+      "image_filename": "d73c9c63-0b8c-446a-a4b4-df7de7c1c204.png",
+      "class_label": "HCC",
+      "selection_group": "prediction_selected",
+      "selection_reason": "fixed_right_original_wrong",
+      "model": "original",
+      "predicted_class": "Hemangioma",
+      "correct": false,
+      "prob_hcc": 0.08537119626998901,
+      "saved_prob_hcc": 0.08548876643180847,
+      "prob_difference": -0.00011757016181945801,
+      "best_epoch": 17,
+      "checkpoint_sha256": "6d638d030db65498895ea59926158c8ceea043218fbc12cc83c8c226ce7f9837",
+      "target_layer_shape": [
+        1,
+        2048,
+        7,
+        7
+      ],
+      "gradient_l1": 32.833641052246094,
+      "cam_valid": true,
+      "attention_shape": [
+        1,
+        1
+      ],
+      "attention_min": 0.5632680654525757,
+      "attention_max": 0.5632680654525757,
+      "attention_std": 0.0,
+      "true_cam_224_path": "seed_1007\\individual\\original\\d73c9c63-0b8c-446a-a4b4-df7de7c1c204_gt_224.npy",
+      "true_cam_7x7_path": "seed_1007\\individual\\original\\d73c9c63-0b8c-446a-a4b4-df7de7c1c204_gt_7x7.npy",
+      "heatmap_path": "seed_1007\\individual\\original\\d73c9c63-0b8c-446a-a4b4-df7de7c1c204_gt_heatmap.png",
+      "overlay_path": "seed_1007\\individual\\original\\d73c9c63-0b8c-446a-a4b4-df7de7c1c204_gt_overlay.png",
+      "predicted_cam_path": "seed_1007\\individual\\original\\d73c9c63-0b8c-446a-a4b4-df7de7c1c204_pred_224.npy",
+      "predicted_overlay_path": "seed_1007\\individual\\original\\d73c9c63-0b8c-446a-a4b4-df7de7c1c204_pred_overlay.png"
+    },
+    {
+      "seed": 1007,
+      "patient_id": "HCC_530",
+      "image_filename": "d73c9c63-0b8c-446a-a4b4-df7de7c1c204.png",
+      "class_label": "HCC",
+      "selection_group": "prediction_selected",
+      "selection_reason": "fixed_right_original_wrong",
+      "model": "spatial_fixed",
+      "predicted_class": "HCC",
+      "correct": true,
+      "prob_hcc": 0.7007636427879333,
+      "saved_prob_hcc": 0.7000718712806702,
+      "prob_difference": 0.0006917715072631836,
+      "best_epoch": 4,
+      "checkpoint_sha256": "58ac4463a4789c1c9a5c9950e79d63ad9b7e5aa81a88846ade126159a570c901",
+      "target_layer_shape": [
+        1,
+        2048,
+        7,
+        7
+      ],
+      "gradient_l1": 18.45558738708496,
+      "cam_valid": true,
+      "attention_shape": [
+        7,
+        7
+      ],
+      "attention_min": 0.13161315023899078,
+      "attention_max": 0.999822199344635,
+      "attention_std": 0.19438396394252777,
+      "true_cam_224_path": "seed_1007\\individual\\spatial_fixed\\d73c9c63-0b8c-446a-a4b4-df7de7c1c204_gt_224.npy",
+      "true_cam_7x7_path": "seed_1007\\individual\\spatial_fixed\\d73c9c63-0b8c-446a-a4b4-df7de7c1c204_gt_7x7.npy",
+      "heatmap_path": "seed_1007\\individual\\spatial_fixed\\d73c9c63-0b8c-446a-a4b4-df7de7c1c204_gt_heatmap.png",
+      "overlay_path": "seed_1007\\individual\\spatial_fixed\\d73c9c63-0b8c-446a-a4b4-df7de7c1c204_gt_overlay.png",
+      "predicted_cam_path": "",
+      "predicted_overlay_path": ""
+    }
+  ]
+}

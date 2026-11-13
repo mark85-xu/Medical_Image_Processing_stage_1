@@ -1,0 +1,93 @@
+{
+  "pair": {
+    "seed": 1009,
+    "patient_id": "Hem_446",
+    "image_filename": "6642bf5d-d591-4345-a761-97c3179c218b.jpg",
+    "class_label": "Hemangioma",
+    "selection_group": "random_stratified",
+    "selection_reason": "seeded_patient_sample",
+    "original_correct": true,
+    "fixed_correct": true,
+    "top20_iou": 0.5384615384615384,
+    "centroid_distance": 0.04847831668086458,
+    "pearson_7x7": 0.7041178699309933,
+    "comparison_path": "seed_1009\\comparisons\\random_stratified\\Hemangioma\\6642bf5d-d591-4345-a761-97c3179c218b.png",
+    "attention_path": "seed_1009\\attention_audit\\6642bf5d-d591-4345-a761-97c3179c218b.png"
+  },
+  "predictions": [
+    {
+      "seed": 1009,
+      "patient_id": "Hem_446",
+      "image_filename": "6642bf5d-d591-4345-a761-97c3179c218b.jpg",
+      "class_label": "Hemangioma",
+      "selection_group": "random_stratified",
+      "selection_reason": "seeded_patient_sample",
+      "model": "original",
+      "predicted_class": "Hemangioma",
+      "correct": true,
+      "prob_hcc": 0.00036089372588321567,
+      "saved_prob_hcc": 0.00036093153175897896,
+      "prob_difference": -3.780587576329708e-08,
+      "best_epoch": 20,
+      "checkpoint_sha256": "8ca9de85788879367e7bcd77461550333f2152449edb6408b94670f9b87f7f8d",
+      "target_layer_shape": [
+        1,
+        2048,
+        7,
+        7
+      ],
+      "gradient_l1": 1.4363763332366943,
+      "cam_valid": true,
+      "attention_shape": [
+        1,
+        1
+      ],
+      "attention_min": 0.5913326740264893,
+      "attention_max": 0.5913326740264893,
+      "attention_std": 0.0,
+      "true_cam_224_path": "seed_1009\\individual\\original\\6642bf5d-d591-4345-a761-97c3179c218b_gt_224.npy",
+      "true_cam_7x7_path": "seed_1009\\individual\\original\\6642bf5d-d591-4345-a761-97c3179c218b_gt_7x7.npy",
+      "heatmap_path": "seed_1009\\individual\\original\\6642bf5d-d591-4345-a761-97c3179c218b_gt_heatmap.png",
+      "overlay_path": "seed_1009\\individual\\original\\6642bf5d-d591-4345-a761-97c3179c218b_gt_overlay.png",
+      "predicted_cam_path": "",
+      "predicted_overlay_path": ""
+    },
+    {
+      "seed": 1009,
+      "patient_id": "Hem_446",
+      "image_filename": "6642bf5d-d591-4345-a761-97c3179c218b.jpg",
+      "class_label": "Hemangioma",
+      "selection_group": "random_stratified",
+      "selection_reason": "seeded_patient_sample",
+      "model": "spatial_fixed",
+      "predicted_class": "Hemangioma",
+      "correct": true,
+      "prob_hcc": 4.916884345637372e-21,
+      "saved_prob_hcc": 4.712781972354531e-21,
+      "prob_difference": 2.0410237328284137e-22,
+      "best_epoch": 10,
+      "checkpoint_sha256": "f4b7cfc1adb834f0f39b3aa54924528b00bd45fba76a233a0821dd3a6884634f",
+      "target_layer_shape": [
+        1,
+        2048,
+        7,
+        7
+      ],
+      "gradient_l1": 115.74447631835938,
+      "cam_valid": true,
+      "attention_shape": [
+        7,
+        7
+      ],
+      "attention_min": 1.520720252301544e-05,
+      "attention_max": 1.0,
+      "attention_std": 0.3200032114982605,
+      "true_cam_224_path": "seed_1009\\individual\\spatial_fixed\\6642bf5d-d591-4345-a761-97c3179c218b_gt_224.npy",
+      "true_cam_7x7_path": "seed_1009\\individual\\spatial_fixed\\6642bf5d-d591-4345-a761-97c3179c218b_gt_7x7.npy",
+      "heatmap_path": "seed_1009\\individual\\spatial_fixed\\6642bf5d-d591-4345-a761-97c3179c218b_gt_heatmap.png",
+      "overlay_path": "seed_1009\\individual\\spatial_fixed\\6642bf5d-d591-4345-a761-97c3179c218b_gt_overlay.png",
+      "predicted_cam_path": "",
+      "predicted_overlay_path": ""
+    }
+  ]
+}

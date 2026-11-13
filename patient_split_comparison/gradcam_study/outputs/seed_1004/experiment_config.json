@@ -1,0 +1,21 @@
+{
+  "seed": 1004,
+  "smoke": false,
+  "sample_seed": 20262113,
+  "per_class": 8,
+  "device": "cuda",
+  "split_assignment_sha256": "29f504cb8630addc3b06b10ec7991297541a6c6ec97fdd46203478eaa17aaffb",
+  "normalization_sha256": "9e0d407765dcdb8e39aec0af5cefd243ca411e5e5232b7f8b7b3a6cf88d2fcf0",
+  "checkpoints": {
+    "original": "fc5645d03c589e1eae8f7128fe937589119bb679d724ffdff7a33a279c844a01",
+    "spatial_fixed": "5d44ee3fe24af0050f7712d6a9245d8dcaa1a0fcc4410cbb0687052b0183142b"
+  },
+  "cam_target": "true class raw logit",
+  "target_layer": "backbone[-1][-1]",
+  "cam_grid": [
+    7,
+    7
+  ],
+  "colormap": "jet",
+  "alpha": 0.4
+}
